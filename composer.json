@@ -1,0 +1,29 @@
+{
+    "name": "hypercode/queryrunner",
+    "description": "A form to create and execute querys using PHP.",
+    "type": "library",
+    "require": {
+        "hypercode/query": "^1.0",
+        "hypercode/database_connector": "dev-main"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JoaoGabrielOliveira",
+            "email": "joaog.conceicao@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Hyper\\Record\\":["src"]
+        }
+    },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/JoaoGabrielOliveira/hyper_database_connector.git"
+        }
+    ]
+}
