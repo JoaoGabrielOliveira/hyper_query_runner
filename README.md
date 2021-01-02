@@ -1,6 +1,6 @@
 # QueryRunner
 
-Using the packages **[Query]()** and **[DatabaseConnection]()**, use the **QueryRunner**. A form to create and execute querys using PHP.
+Using the packages **[Query](https://packagist.org/packages/hypercode/query)** and **[DatabaseConnection](https://github.com/JoaoGabrielOliveira/hyper_database_connector)**, use the **QueryRunner**. A form to create and execute querys using PHP.
 
 First step is set a database.
 ````php
@@ -29,9 +29,18 @@ After that, you can use three methods to execute the query.
 
 ### fetch
 Execute query and return **just the first result**.
+````php
+$query->select('TableName')->fetch();
+````
 
 ### fetchAll
 Execute query and return **all result inside of a array**.
+````php
+$query->select('TableName')->fetchAll();
+````
 
 ### execute
 Execute query and return **rows number affects**.
+````php
+$query->select('TableName')->execute();
+````
